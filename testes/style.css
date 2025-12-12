@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #eae1ff;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Fundo com formas */
+.background {
+    position: absolute;
+    inset: 0;
+    background-image: url(./img/fotodefundo.png);
+    filter: hue-rotate(250deg) saturate(2);
+    opacity: 0.35;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+/* CARD */
+.card {
+    text-align: center;
+    margin-top: -40px;
+}
+
+/* FOTO */
+.avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid #7446FF;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* NOME */
+.card h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1e1e1e;
+    margin-bottom: 3px;
+}
+
+/* CARGO */
+.cargo {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #7446ff;
+    margin-bottom: 20px;
+}
+
+/* BIO */
+.bio {
+    max-width: 450px;
+    margin: 0 auto 40px auto;
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 22px;
+}
+
+/* LISTA */
+.links {
+    list-style: none;
+    width: 430px;
+    margin: 0 auto;
+}
+
+.links li {
+    margin-bottom: 18px;
+}
+
+/* BOTÕES */
+.links a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 22px;
+    background: linear-gradient(90deg, #8a52ff, #6e38ff);
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.25s ease;
+}
+
+.links a:hover {
+    transform: scale(1.03);
+    background: linear-gradient(90deg, #9862ff, #7a46ff);
+}
+
+/* ICONES */
+.left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.left img {
+    width: 24px;
+}
+
+/* SETA */
+.arrow {
+    font-size: 1.3rem;
+}
